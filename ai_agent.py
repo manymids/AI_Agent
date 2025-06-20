@@ -173,12 +173,7 @@ def agent_loop(
             "以下のPythonコードを実行したところ、不備やエラーが発生しました。\n"
             "コードと実行結果を確認し、問題点を特定して修正した新しいPythonコードを提案してください。\n"
             "【生成されたPythonコード】\n" + code +
-            "\n【実行結果・エラーメッセージ】\n" + exec_result +
-            "\n【指示】\n"
-            "- 問題点を簡潔に説明した上で、修正済みのPythonコードを提示してください。\n"
-            "- コードは必ず```python から ```で囲んでください。\n"
-            "- 必要に応じてコメントやdocstringも付与してください。\n"
-            "- 余計な説明や出力は不要です。コードと簡単な修正理由のみを出力してください。\n"
+            "\n【実行結果・エラーメッセージ】\n" + exec_result
         )
     # リトライオーバー
     st.write("リトライオーバー")
@@ -190,9 +185,9 @@ def main():
     Streamlitアプリのエントリーポイント。
     ユーザー入力を受け取り、AIエージェントによるPythonコード生成・実行を行う。
     """    
-    #st.title("AIエージェントによる")
-    #st.title("Python自動生成＆実行環境")
-    st.image("ai_agent.png")
+    st.title("AIエージェントによる")
+    st.title("Python自動生成＆実行環境")
+    #st.image("ai_agent.png")
 
     user_input = st.text_area("作りたいものをAIに伝えて。", "〇〇をするpythonコードを作って")
     run_button = st.button("作成を依頼する")
