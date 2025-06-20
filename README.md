@@ -26,7 +26,7 @@
 - OpenAI APIキー、Google Gemini APIキー、またはローカルLLM（LM Studio等）のAPIエンドポイント
 
 ```bash
-git clone https://github.com/yourname/ai-agent-python.git
+git clone https://github.com/manymids/AI_Agent.git
 cd ai-agent-python
 pip install -r requirements.txt
 ```
