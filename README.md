@@ -61,3 +61,24 @@ streamlit run ai_agent.py
 
 - コード: MITライセンス
   
+---
+# おまけ
+
+「このAIエージェントをOpenAI Agents SDKを使って書き換えてください。」とAIに依頼して
+ai_agent.pyをOpenAIのAssistants API版に書き換えてみました。
+
+## 実行方法
+```bash
+streamlit run ai_agent_openai_sdk.py
+```
+
+## オリジナルとの違い
+- API版はコードがシンプルです
+- API版は途中経過表示がシンプルです。
+- API版はコード生成の割り切りが速いです。（元のはなんとか作ろうとする）
+- API版のメッセージはフォーマルで固いです。（生成AIの意向？）
+- API版は圧倒的に高速です。
+
+## 結論
+
+#### 実運用する場合は「OpenAIのAssistants API」を使いましょう！！ですね。
